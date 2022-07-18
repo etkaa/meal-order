@@ -1,7 +1,7 @@
 .meal {
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 2rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #ccc;
   }
@@ -19,4 +19,26 @@
     font-weight: bold;
     color: #ad5502;
     font-size: 1.25rem;
+  }
+
+  .details { 
+    margin: auto;
+    margin-right: 1rem;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img-div {
+    position: relative;
+    margin-right: 1rem;
+    padding: auto;
+  }
+
+  .meal-img {
+    border-radius: 50%;
+    width: 7rem;
+    margin-bottom: -4px;
   }

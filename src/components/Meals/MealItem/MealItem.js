@@ -19,10 +19,15 @@ const MealItem = (props) => {
 
   return (
     <li className={classes.meal}>
-      <div>
-        <h3>{props.name}</h3>
-        <div className={classes.description}>{props.description}</div>
-        <div className={classes.price}>{price}</div>
+      <div className={classes.wrapper}>
+        <div className={classes["img-div"]}>
+          <img className={classes["meal-img"]} alt="" src={props.image}></img>
+        </div>
+        <div className={classes.details}>
+          <h3>{props.name}</h3>
+          <div className={classes.description}>{props.description}</div>
+          <div className={classes.price}>{price}</div>
+        </div>
       </div>
       <div>
         <MealItemForm onAddToCart={addToCardHandler} id={props.id} />
